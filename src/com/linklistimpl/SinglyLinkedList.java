@@ -177,6 +177,11 @@ public class SinglyLinkedList {
     return data;
   }
   
+  /**
+   * This function return the index of provided element. Return -1 if data not found.
+   * @param data Data to be searched
+   * @return Index of the node in which data is present
+   */
   public int indexOf(int data) {
     int foundIndex = -1;
     
