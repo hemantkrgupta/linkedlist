@@ -118,6 +118,84 @@ public class SinglyLinkedList {
   }
   
   /**
+   * This function removes the last node from list.
+   * @return Data of last node
+   */
+  public int remove() {
+    SinglePointerNode currentNode = this.head;
+    int data;
+    if(this.count==0) {
+      throw new IndexOutOfBoundsException("Deletion from an empty list");
+    } else if(this.count == 1) {
+      data = head.getData();
+      this.head = null;      
+    } else {
+      while(currentNode.getNextNode().getNextNode() != null) {
+        currentNode = currentNode.getNextNode();
+      }
+      data = currentNode.getNextNode().getData();
+      currentNode.setNextNode(null);
+    }
+    this.count--;
+    return data;
+  }
+  
+  /**
+   * This function removes the last node from list.
+   * @return Data of last node
+   */
+  public int pop() {
+    return remove();
+  }
+  
+  /**
+   * This function removes the node at specified index amd returns the data of that node.
+   * @param index Index of the node to be removed (Index starts from 0)
+   * @return Data of node
+   */
+  public int remove(int index) {
+    if(this.count==0) {
+      throw new IndexOutOfBoundsException("Deletion from an empty list");
+    } else if(this.count <= index) {
+      throw new IndexOutOfBoundsException("Specified index: " + index + ", last index: " + (this.count-1));
+    }
+    
+    int data;
+    
+    if(index==0) {
+      data = this.head.getData();
+      this.head = this.head.getNextNode();
+    } else {    
+      SinglePointerNode currentNode = this.head;
+      for(int i=1;i<index;i++) {
+        currentNode = currentNode.getNextNode();
+      }
+      data = currentNode.getNextNode().getData();
+      currentNode.setNextNode(currentNode.getNextNode().getNextNode());
+    }
+    this.count--;
+    return data;
+  }
+  
+  public int indexOf(int data) {
+    int foundIndex = -1;
+    
+    if(this.count > 0) {
+      int atIndex = 0;
+      SinglePointerNode currentNode = this.head;
+      while(currentNode != null) {
+        if(currentNode.getData() == data) {
+          foundIndex = atIndex;
+          break;
+        }
+        currentNode = currentNode.getNextNode();
+        atIndex++;
+      }
+    }
+    return foundIndex;
+  }
+  
+  /**
    * This function provides the string representation of singly linked list.
    */
   public String toString() {
