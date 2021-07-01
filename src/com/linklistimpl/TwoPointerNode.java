@@ -31,7 +31,7 @@ public class TwoPointerNode {
    * This functions sets the next pointer to provided node.
    * @param nextNode Next node
    */
-  public void setNext(TwoPointerNode nextNode) {
+  public void setNextNode(TwoPointerNode nextNode) {
     this.next = nextNode;
   }
   
@@ -39,7 +39,7 @@ public class TwoPointerNode {
    * This function returns the next node pointed by this node.
    * @return Next node
    */
-  public TwoPointerNode getNext() {
+  public TwoPointerNode getNextNode() {
     return this.next;
   }
   
@@ -47,7 +47,7 @@ public class TwoPointerNode {
    * This function sets the previous pointer to provided node.
    * @param prevNode Previous node
    */
-  public void setPrev(TwoPointerNode prevNode) {
+  public void setPrevNode(TwoPointerNode prevNode) {
     this.prev = prevNode;
   }
   
@@ -55,7 +55,7 @@ public class TwoPointerNode {
    * This function return the previous node pointed by this node.
    * @return Previous node
    */
-  public TwoPointerNode getPrev() {
+  public TwoPointerNode getPrevNode() {
     return this.prev;
   }
 }
