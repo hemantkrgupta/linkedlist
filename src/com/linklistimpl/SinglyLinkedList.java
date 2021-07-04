@@ -61,9 +61,7 @@ public class SinglyLinkedList {
     
     SinglePointerNode node = new SinglePointerNode(data);
     
-    if(this.count == 0) {
-      this.head = node;
-    } else if(index == 0) {    
+    if(index == 0) {    
       node.setNextNode(this.head);
       this.head = node;
     } else {    
