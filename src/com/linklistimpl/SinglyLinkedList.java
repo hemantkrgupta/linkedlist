@@ -61,20 +61,21 @@ public class SinglyLinkedList {
     
     SinglePointerNode node = new SinglePointerNode(data);
     
-    if(index == 0) {      
-      SinglePointerNode tempNode = this.head.getNextNode();      
+    if(this.count == 0) {
       this.head = node;
-      this.head.setNextNode(tempNode);
-    }
+    } else if(index == 0) {    
+      node.setNextNode(this.head);
+      this.head = node;
+    } else {    
+      SinglePointerNode currentNode = this.head;
+      for(int i=1;i<index;i++) {
+        currentNode = currentNode.getNextNode();
+      }
     
-    SinglePointerNode currentNode = this.head;
-    for(int i=1;i<index;i++) {
-      currentNode = currentNode.getNextNode();
+      SinglePointerNode tempNode = currentNode.getNextNode();      
+      currentNode.setNextNode(node);
+      node.setNextNode(tempNode);    
     }
-    
-    SinglePointerNode tempNode = currentNode.getNextNode();      
-    currentNode.setNextNode(node);
-    node.setNextNode(tempNode);    
     
     this.count++;
   }
@@ -96,25 +97,10 @@ public class SinglyLinkedList {
   
   /**
    * This function returns the head node of singly linked list.
-   * @return
+   * @return Head node
    */
   public SinglePointerNode getHead() {
     return this.head;
-  }
-  
-  /**
-   * This function sets the head of singly linked list to provided node.
-   * (Any data, if present in the singly linked list, will be lost)
-   * @param node Node to set as head
-   */
-  public void setHead(SinglePointerNode node) {
-    this.head = node;    
-    this.count=0;
-    
-    while(node != null) {
-      this.count++;
-      node = node.getNextNode();
-    }
   }
   
   /**
@@ -149,7 +135,7 @@ public class SinglyLinkedList {
   }
   
   /**
-   * This function removes the node at specified index amd returns the data of that node.
+   * This function removes the node at specified index and returns the data of that node.
    * @param index Index of the node to be removed (Index starts from 0)
    * @return Data of node
    */
