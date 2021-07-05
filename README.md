@@ -45,3 +45,7 @@ This class represents a doubly linked list which contains nodes of type TwoPoint
 9. Delete the last node
 10. Delete the node at specified index
 11. Search the data and return index
+
+## 5. FindMidElement
+
+This class contains function findMid(SinglyLinkedList). This function finds and prints the middle element of the given linked list in O(n) time. 
