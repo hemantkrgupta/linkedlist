@@ -7,7 +7,7 @@ public class FindMidElement {
    * @param list SinglyLinkedList
    */
   public static void findMid(SinglyLinkedList list) {
-    if(list.size()==0) {
+    if(list.isEmpty()) {
       System.out.println("Empty list");
       return;
     }
