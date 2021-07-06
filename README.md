@@ -5,9 +5,9 @@ This repository contains java code for linked list. Following are the classes pr
 ## 1. SinglePointerNode
 
 This class represents a node with integer data and a next pointer which points to the node of same type. This node is used to construct singly linked lists. It provides methods to:
-1. get data
-2. get next node
-3. set next node
+1. Get data
+2. Get next node
+3. Set next node
 
 ## 2. TwoPointerNode
 
@@ -48,4 +48,8 @@ This class represents a doubly linked list which contains nodes of type TwoPoint
 
 ## 5. FindMidElement
 
-This class contains function findMid(SinglyLinkedList). This function finds and prints the middle element of the given linked list in O(n) time. 
+This class provides function findMid(SinglyLinkedList). This function finds and prints the middle element of the given linked list in O(n) time.
+
+## 6. ReverseLinkedList
+
+This class provides reverse functions. These functions takes the head node of linked list (These are overloaded functions for singly and doubly linked lists), and return the head after reversal of nodes. Functions take O(n) time and O(1) space.
