@@ -61,3 +61,7 @@ This class provides rotate functions. These functions rotates the linked list co
 ## 8. NthFromLast
 
 This class provides getNthFromLast function. This function takes two arguments: reference to head and N and returns Nth node's data from the end or -1 in case node doesn't exist in O(n) time and constant space. For more information, visit https://practice.geeksforgeeks.org/problems/nth-node-from-end-of-linked-list/1
+
+## 9. SortedMerge
+
+This class provides sortedMerge function. This function takes references to the heads of two sorted linked lists as the arguments and returns the head of merged(in-place) linked list. This function takes O(n+m) time and constant space.
