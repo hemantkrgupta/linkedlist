@@ -52,8 +52,12 @@ This class provides function findMid(SinglyLinkedList). This function finds and 
 
 ## 6. ReverseLinkedList
 
-This class provides reverse functions. These functions takes the head node of linked list (These are overloaded functions for singly and doubly linked lists), and return the head after reversal of nodes. Functions take O(n) time and O(1) space.
+This class provides reverse functions. These functions takes the head node of linked list (These are overloaded functions for singly and doubly linked lists), and return the head after reversal of nodes. Functions take O(n) time and constant space.
 
 ## 7. RotateLinkedList
 
-This class provides rotate functions. These functions rotates the linked list counter-clockwise by k nodes, where k is a given positive integer smaller than or equal to length of the linked list. Funtions take O(n) time and O(1) space. For more information, visit https://practice.geeksforgeeks.org/problems/rotate-a-linked-list/1
+This class provides rotate functions. These functions rotates the linked list counter-clockwise by k nodes, where k is a given positive integer smaller than or equal to length of the linked list. Funtions take O(n) time and constant space. For more information, visit https://practice.geeksforgeeks.org/problems/rotate-a-linked-list/1
+
+## 8. NthFromLast
+
+This class provides getNthFromLast function. This function takes two arguments: reference to head and N and returns Nth node's data from the end or -1 in case node doesn't exist in O(n) time and constant space.
