@@ -1,5 +1,12 @@
 package com.linklistimpl;
 
+/**
+ * This class represents a singly linked list which contains nodes of type SinglePointerNode.
+ * It contains a head pointer and a integer which stores size of linked list. It provides different
+ * methods to operate on singly linked list.
+ * @author Hemant
+ *
+ */
 public class SinglyLinkedList {
   private int count;
   private SinglePointerNode head;

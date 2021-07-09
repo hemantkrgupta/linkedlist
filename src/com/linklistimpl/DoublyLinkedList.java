@@ -1,5 +1,12 @@
 package com.linklistimpl;
 
+/**
+ * This class represents a doubly linked list which contains nodes of type TwoPointerNode.
+ * It contains a head pointer, a tail pointer and an integer which stores size of linked list.
+ * It provides different methods to operate on doubly linked list.
+ * @author Hemant
+ *
+ */
 public class DoublyLinkedList {
   private int count;
   private TwoPointerNode head;

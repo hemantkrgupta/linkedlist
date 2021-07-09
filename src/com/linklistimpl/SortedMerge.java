@@ -1,8 +1,15 @@
 package com.linklistimpl;
 
+/**
+ * This class provides sortedMerge function. This function takes references to the heads
+ * of two sorted linked lists as the arguments and returns the head of merged(in-place)
+ * linked list. This function takes O(n+m) time and constant space.
+ * @author Hemant
+ *
+ */
 public class SortedMerge {
   /**
-   * This function takes references to the heads of two linked lists as the arguments and returns the head of merged(in-place) linked list.
+   * This function takes references to the heads of two sorted linked lists as the arguments and returns the head of merged(in-place) linked list.
    * @param head1 Head of first linked list
    * @param head2 Head of second linked list
    * @return Head of merged linked list

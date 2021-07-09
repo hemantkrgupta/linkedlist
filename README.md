@@ -56,7 +56,7 @@ This class provides reverse functions. These functions takes the head node of li
 
 ## 7. RotateLinkedList
 
-This class provides rotate functions. These functions rotates the linked list counter-clockwise by k nodes, where k is a given positive integer smaller than or equal to length of the linked list. Funtions take O(n) time and constant space. For more information, visit https://practice.geeksforgeeks.org/problems/rotate-a-linked-list/1
+This class provides rotate functions. These functions rotates the linked list counter-clockwise by k nodes, where k is a given positive integer smaller than or equal to length of the linked list. Functions take O(n) time and constant space. For more information, visit https://practice.geeksforgeeks.org/problems/rotate-a-linked-list/1
 
 ## 8. NthFromLast
 
@@ -65,3 +65,7 @@ This class provides getNthFromLast function. This function takes two arguments: 
 ## 9. SortedMerge
 
 This class provides sortedMerge function. This function takes references to the heads of two sorted linked lists as the arguments and returns the head of merged(in-place) linked list. This function takes O(n+m) time and constant space.
+
+## 10. Driver
+
+This is a driver class to describe the usage of these classes and methods.

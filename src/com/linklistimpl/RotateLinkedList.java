@@ -1,5 +1,12 @@
 package com.linklistimpl;
 
+/**
+ * This class provides rotate functions. These functions rotates the linked list counter-clockwise
+ * by k nodes, where k is a given positive integer smaller than or equal to length of the linked list.
+ * Functions take O(n) time and constant space.
+ * @author Hemant
+ *
+ */
 public class RotateLinkedList {
   /**
    * This function rotates a given singly linked list anti clockwise by k nodes

@@ -1,19 +1,24 @@
 package com.linklistimpl;
 
+/**
+ * This class provides function findMid(SinglyLinkedList).
+ * This function finds and prints the middle element of the given linked list in O(n) time.
+ * @author Hemant
+ *
+ */
 public class FindMidElement {
   /**
    * This function finds the mid element in a given linked list.
    * (To specify the logic, list.size methods is not used).
    * @param list SinglyLinkedList
    */
-  public static void findMid(SinglyLinkedList list) {
-    if(list.isEmpty()) {
-      System.out.println("Empty list");
-      return;
+  public static int findMid(SinglePointerNode head) {
+    if(head == null) {
+      throw new IllegalArgumentException("Empty List");
     }
     
-    SinglePointerNode midNode = list.getHead();
-    SinglePointerNode currentNode = list.getHead();
+    SinglePointerNode midNode = head;
+    SinglePointerNode currentNode = head;
     int i = 0;
     
     while(currentNode.getNextNode() != null) {
@@ -25,6 +30,6 @@ public class FindMidElement {
         midNode = midNode.getNextNode();
       }
     }    
-    System.out.println("Middle Element: " + midNode.getData());
+    return midNode.getData();
   }
 }

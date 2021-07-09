@@ -1,5 +1,12 @@
 package com.linklistimpl;
 
+/**
+ * This class provides reverse functions. These functions takes the head node of linked list
+ * (These are overloaded functions for singly and doubly linked lists), and return the head
+ *  after reversal of nodes. Functions take O(n) time and constant space.
+ * @author Hemant
+ *
+ */
 public class ReverseLinkedList {
   
   /**
